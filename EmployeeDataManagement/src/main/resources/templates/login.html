@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<link rel="stylesheet" href="/login.css?v=2"> 
+</head>
+<body>
+<!--    <a href="/dashboard" class="back-to-register">Back to Home</a>  Stays outside the wrapper 
+-->
+    <div class="wrapper">
+        <div class="title">Login</div>
+        <form action="/login" method="post">
+            <div class="field">
+                <input type="email" id="email" name="email" required autocomplete="off">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="field">
+                <input type="password" id="password" name="password" required autocomplete="off">
+                <label for="password">Password</label>
+            </div>
+
+            <div class="content">
+                
+                <div class="pass-link">
+                    <a th:href="@{/forgot-password}">Forgot Password?</a>
+                </div>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Login">
+            </div>
+
+            <div class="signup-link">
+                 <a href="/dashboard">Back to Home</a>
+            </div>
+
+            <p th:if="${errorMessage}" class="error-message" th:text="${errorMessage}"></p>
+        </form>
+
+        <script>
+            window.onload = function () {
+                setTimeout(function () {
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+
+                    let errorMessage = document.querySelector(".error-message");
+                    if (errorMessage) {
+                        errorMessage.style.display = "none";
+                    }
+                }, 100);
+            };
+        </script>
+    </div>
+</body>
+</html>

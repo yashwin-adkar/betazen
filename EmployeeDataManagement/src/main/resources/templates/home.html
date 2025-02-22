@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Details Page</title>
+	<link rel="stylesheet" href="/home.css?v=1">
+</head>
+<body>
+    <h1>Welcome to the Visitor Management System</h1>
+
+    <h2>Visitor List</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <!--<th>Employee ID</th>-->
+                <th>Visitor ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="employee : ${employees}">
+<!--                <td th:text="${employee.employeeId}"></td>
+-->                <td th:text="${employee.adminId}"></td>
+                <td th:text="${employee.firstName}"></td>
+                <td th:text="${employee.lastName}"></td>
+                <td th:text="${employee.email}"></td>
+                <td th:text="${employee.phoneNumber}"></td>
+                <td th:text="${employee.role}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Buttons Placed Below Table -->
+    <div class="button-container">
+        <a href="/register">
+            <button>Back to Register</button>
+        </a>
+        <a href="/dashboard">
+            <button>Home</button>
+        </a>
+    </div>
+
+</body>
+</html>

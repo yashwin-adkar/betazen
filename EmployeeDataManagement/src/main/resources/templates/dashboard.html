@@ -1,0 +1,291 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betazen Dashboard</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-header {
+            background-color: #ffffff;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+		.header-container {
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		    max-width: 1200px;
+		    margin: 0 auto;
+		    padding: 0 20px;
+		    width: 100%;
+		}
+
+		.logo {
+		    margin-right: auto; /* Pushes other elements to the right */
+		}
+
+		.logo img {
+		    height: 50px;
+		    width: auto;
+		    display: block;
+		}
+
+
+        .header-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-buttons a {
+            background: linear-gradient(135deg, rgb(60, 160, 130), rgb(40, 120, 100));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .header-buttons a:hover {
+            transform: scale(1.05);
+        }
+
+        .dashboard-hero {
+            margin-top: 80px;
+            height: 600px;
+            background: url('https://cdn.prod.website-files.com/64820bb890b5d776bb0c9faf/653b0b92e6e6a80e90a92da7_mobile-hero.svg') no-repeat center center/cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+			background-color: white;
+        }
+
+        .dashboard-text {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .dashboard-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .dashboard-text p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 2500px;
+            margin: 60px auto;
+            padding: 0 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .customer-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .customer-logos img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+            width: 100%;
+        }
+		
+		
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Betazen Logo"></a>
+            </div>
+            <div class="header-buttons">
+                <a href="/register">Register</a>
+                <a href="/login">View Details</a>
+                <a href="/contactus">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard-hero">
+        <div class="dashboard-text">
+            <h1>Welcome to Betazen Dashboard</h1>
+            <p>Streamlined Visitor Management & Analytics.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Our Partners</h2>
+        <div class="customer-logos">
+            <img src="https://www.zarla.com/images/ibm-logo-2400x2400-20220519-1.png" alt="IBM">
+            <img src="https://www.zarla.com/images/starbucks-logo-2400x2400-20220513.png" alt="Starbucks">
+            <img src="https://www.zarla.com/images/sony-logo-2400x2400-20220516-3.png" alt="Sony">
+            <img src="https://www.zarla.com/images/mastercard-logo-2400x2400-20220516-3.png" alt="Mastercard">
+			<img src="https://www.zarla.com/images/mastercard-logo-2400x2400-20220516-3.png" alt="Mastercard">
+			<img src="https://www.zarla.com/images/mastercard-logo-2400x2400-20220516-3.png" alt="Mastercard">
+			
+			</div>
+    </div>
+
+    <footer>
+        <p>© 2025 Betazen. All rights reserved. | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betazen Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+    <style>
+        .about-us {
+            padding: 20px; /* Adjust padding as needed */
+            background: none; /* Ensure no background image is applied */
+            color: #333; /* Optional: Change text color for better visibility */
+        }
+
+        /* Add other styles as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/dashboard"><img src="images/logo.png" alt="Betazen Logo"></a>
+        </div>
+        <div class="header-right">
+            <button class="cta-button" onclick="window.location.href='/register'">Register</button>
+            <button class="cta-button" onclick="window.location.href='/login'">View Details</button>
+			<button id="scanButton">Scan QR Code</button>
+
+			 <button class="cta-button" onclick="window.location.href='/contactus'">Contact Us</button>
+        </div>
+    </header>
+
+    <main class="main-background">
+        <section class="main-banner">
+            <h1>Streamlined Visitor Management & Analytics</h1>
+            <p>Simplify visitor registration and event footfall analysis with our all-in-one solution.</p>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            
+        </section>
+		<!-- Key Features Section -->
+		<section class="key-features">
+		    <h2>Key Features</h2>
+		    <div class="feature-cards">
+		        <div class="feature-card">
+		            <h3>Custom Registration Forms</h3>
+		            <p>Decide exactly what information you need from your visitors. Tailor forms to your event's needs.</p>
+		        </div>
+		        <div class="feature-card">
+		            <h3>QR Code Generation</h3>
+		            <p>Every visitor gets a unique QR code via email or WhatsApp for seamless event entry.</p>
+		        </div>
+		        <div class="feature-card">
+		            <h3>Footfall & Analytics</h3>
+		            <p>Monitor visitor data in real time with insightful reports for better decision-making.</p>
+		        </div>
+		        <div class="feature-card">
+		            <h3>Premium Entry & Payments</h3>
+		            <p>Enable paid registrations and validate tickets automatically for a hassle-free event.</p>
+		        </div>
+		    </div>
+		</section>
+
+        <!-- Our Clients Section -->
+        <div class="product-overview">
+            <h2>Our Clients</h2>
+            <div class="clients">
+                <div class="client-logos">
+                    <img src="https://www.zarla.com/images/nike-logo-2400x2400-20220504.png?crop=1:1,smart&width=150&dpr=2" alt="Client 1">
+                    <img src="https://www.zarla.com/images/bmw-logo-2400x2400-20220512.png?crop=1:1,smart&width=150&dpr=2" alt="Client 2">
+                    <img src="https://www.zarla.com/images/disney-logo-2400x2400-20220513-2.png?crop=1:1,smart&width=150&dpr=2" alt="Client 3">
+                    <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2022/11/09211506/Zoom.png" alt="Client 4">
+                    <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2022/11/09184036/hostlink-logo-design-software-company-logo-by-mahjabin-afrin-dribbble.png" alt="Client 5">
+                    <img src="https://www.zarla.com/images/hp-logo-2400x2400-20220519.png?crop=1:1,smart&width=150&dpr=2" alt="Client 6">
+                    <img src="https://www.zarla.com/images/amazon-logo-2400x2400-20223105.png?crop=1:1,smart&width=150&dpr=2" alt="Client 7">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2025 Your Company. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.1/html5-qrcode.min.js"></script>
+
+	<div id="qr-reader" style="width: 300px;"></div>
+
+	<script>
+	    document.getElementById("scanButton").addEventListener("click", function () {
+	        let qrReader = new Html5Qrcode("qr-reader");
+	        qrReader.start(
+	            { facingMode: "environment" }, 
+	            { fps: 10, qrbox: 250 },
+	            (decodedText) => {
+	                window.location.href = decodedText;  // Redirect to the scanned URL
+	            }
+	        ).catch(err => console.log("QR Scanner Error: " + err));
+	    });
+	</script>
+
+</body>
+</html>

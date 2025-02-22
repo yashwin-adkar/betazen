@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 255, 252); /* Light pastel background */
+  padding: 20px;
+}
+.back-to-register {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(80, 180, 150);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px; /* Adjust width by changing padding */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-align: right;
+  min-width: 120px; /* Ensures a consistent width */
+}
+
+.back-to-register:hover {
+  text-decoration: underline;
+}
+
+
+/* Wrapper (Login Box) Styling */
+.wrapper {
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  margin: 100px auto; /* Centers the card */
+}
+
+.wrapper .title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 0;
+  color: #333;
+  background: rgb(200, 240, 230); /* Soft greenish-blue */
+  border-radius: 10px 10px 0 0;
+}
+
+.wrapper form {
+  padding: 20px;
+}
+
+.field {
+  position: relative;
+  margin-top: 20px;
+}
+
+.field input {
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid rgb(200, 240, 230);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: rgb(240, 255, 252);
+  color: #333;
+}
+
+.field input:focus {
+  border-color: rgb(80, 180, 150);
+  box-shadow: 0 0 5px rgba(80, 180, 150, 0.6);
+  outline: none;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 16px;
+  color: #666;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.field input:focus ~ label,
+.field input:valid ~ label {
+  top: 5px;
+  font-size: 14px;
+  color: rgb(80, 180, 150);
+  background: white;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.pass-link{
+	text-align: center;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.content .pass-link a {
+  color: rgb(80, 180, 150);
+  text-decoration: none;
+}
+
+.content .pass-link a:hover {
+  text-decoration: underline;
+}
+.pass-link {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+
+.field input[type="submit"] {
+  color: white;
+  background: rgb(80, 180, 150);
+  border: none;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background: rgb(60, 160, 130);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+.signup-link a {
+  color: rgb(80, 180, 150);
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.back-to-register {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: rgb(80, 180, 150);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-to-register:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .field input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .field label {
+    font-size: 14px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .back-to-register {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .field input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .signup-link {
+    font-size: 12px;
+  }
+}

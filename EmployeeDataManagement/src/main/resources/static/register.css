@@ -1,0 +1,118 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(240, 255, 252); /* Light cyan background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Top-right Button */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn {
+    background: linear-gradient(135deg, rgb(60, 160, 130), rgb(40, 120, 100)); /* Greenish gradient */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, rgb(50, 140, 120), rgb(30, 100, 80));
+    transform: scale(1.05);
+}
+
+/* Registration Form Container */
+.container {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Title */
+h2 {
+    color: rgb(30, 100, 80);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: rgb(60, 160, 130);
+}
+
+/* Dropdown Styling */
+select.input-field {
+    appearance: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Messages */
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.success {
+    background: rgba(60, 160, 130, 0.2);
+    color: rgb(30, 100, 80);
+}
+
+.error {
+    background: rgba(200, 60, 60, 0.2);
+    color: rgb(160, 30, 30);
+}
+
+/* Submit Button */
+.form-group .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
